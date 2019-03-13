@@ -5,17 +5,25 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
 </head>
+<style>
+nav,article {height: 900px;}
+
+</style>
 <body>
 
 <h2>
   
-   <a href="index.html">My Blog</a>
-
+   
+   <a href="index.html" alt = "icon" class="icon-block">
+        <i class="fab fa-blogger" style="font-size:60px;color:red;"></i>
+        <span>My Blog</span>
+   </a>
   
 </h2>
-<p>裡面有我的自我介紹，學校，還有生活照哦！</p>
 
 <header>
   <h2>你想要了解什麼？</h2>
@@ -24,25 +32,29 @@
 <section>
   <nav>
     <ul>
-      <li><a href="Me.html">自我介紹</a></li>
-      <li><a href="School.html">學校</a></li>
-      <li><a href="Photo.html">生活照</a></li>
+      <button class="button" style="vertical-align:middle" onclick="location.href = 'Me.html'" ><span>自我介紹 </span></button>
+      <button class="button disabled" style="vertical-align:middle" ><span>學校</span></button>
+      <button class="button" style="vertical-align:middle" onclick="location.href = 'Photo.html'" ><span>生活照</span></button>
     </ul>
   </nav>
   
   <article>
-    <h1>學校</h1>
-    <p>我的學校是NTUST 國立台灣科技大學</p>
-    <img src="ntust.png" alt="NTUST LOGO" width="500" height="150">
+    <h1>學校 School</h1>
+    <p>
+      
+    我的大學是 國立臺灣科技大學，臺灣（National Taiwan University of Science and Technology）</p>
+    <p>簡稱：臺灣科大、臺科大、臺科、NTUST、Taiwan Tech</p>
+    <p>我今年大二，就讀資訊管理學生班</p>
     
-    <img src="ntust3.jpg" alt = "NTUST SCHOOL VIEW" width = "400" height = "250">
+    <img src="ntust.png" alt="NTUST LOGO" width="600" height="150" style="float:left">
+    <img src="ntust3.jpg" alt = "NTUST SCHOOL VIEW" width = "700" height = "400">
 
     
   </article>
 </section>
 
 <footer>
-  <p>謝謝！</p>
+   <p>Copyright © 2019</p>
 </footer>
 
 </body>

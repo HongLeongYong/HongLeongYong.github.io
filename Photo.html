@@ -5,36 +5,56 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 
 </head>
-<body>
+<style>
+nav,article {height: 900px;}
 
+</style>
+<body>
 <h2>
   
-    <a href="index.html">My Blog</a>
-
+   
+   <a href="index.html" alt = "icon" class="icon-block">
+        <i class="fab fa-blogger" style="font-size:60px;color:red;"></i>
+        <span>My Blog</span>
+   </a>
   
 </h2>
-<p>裡面有我的自我介紹，學校，還有生活照哦！</p>
-
 <header>
   <h2>你想要了解什麼？</h2>
 </header>
 
 <section>
   <nav>
-    <ul>
-       <li><a href="Me.html">自我介紹</a></li>
-      <li><a href="School.html">學校</a></li>
-      <li><a href="Photo.html">生活照</a></li>
+    <ul>       
+
+      <button class="button" style="vertical-align:middle" onclick="location.href = 'Me.html'" ><span>自我介紹 </span></button>
+       <button class="button" style="vertical-align:middle" onclick="location.href = 'School.html'" ><span>學校</span></button>
+        <button class="button" style="vertical-align:middle" onclick="location.href = 'Photo.html'" ><span>生活照</span></button>
       
     </ul>
   </nav>
   
   <article>
-    <h1>生活照</h1>
-    <img src="my.jpg" alt="my photo" width="600" height="350">
-    <p>2018年舞會《離情》</p>
+    <h1>生活照 Daily Life Photo</h1>
+    
+
+    <div class="polaroid">
+        <img src="my.jpg" alt="helping in a prom" style="width:100%">
+         <div class="container">
+            <p>2018年舞會《離情》</p>
+          </div>
+          <p>
+        <img src="my2.jpg" alt="going to travel" style="width:100%">
+         <div class="container">
+            <p>2018年僑聯迎新之旅~台中</p>
+            <br>
+          </div>
+
+    </div>
     
 
     
@@ -42,7 +62,8 @@
 </section>
 
 <footer>
-  <p>謝謝！</p>
+  <p>Copyright © 2019</p>
+ 
 </footer>
 
 </body>

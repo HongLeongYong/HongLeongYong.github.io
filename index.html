@@ -5,12 +5,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 </head>
 <body>
 
-<h2>My Blog</h2>
-<p>裡面有我的自我介紹，學校，還有生活照哦！</p>
+<h2>
+  
+   
+   <a href="index.html" alt = "icon" class="icon-block">
+        <i class="fab fa-blogger" style="font-size:60px;color:red;"></i>
+        <span>My Blog</span>
+   </a>
+  
+</h2>
 
 <header>
   <h2>你想要了解什麼？</h2>
@@ -19,21 +27,22 @@
 <section>
   <nav>
     <ul>
-       <li><a href="Me.html">自我介紹</a></li>
-      <li><a href="School.html">學校</a></li>
-      <li><a href="Photo.html">生活照</a></li>
+       <button class="button" style="vertical-align:middle" onclick="location.href = 'Me.html'" ><span>自我介紹 </span></button>
+      <button class="button" style="vertical-align:middle" onclick="location.href = 'School.html'" ><span>學校</span></button>
+      <button class="button" style="vertical-align:middle" onclick="location.href = 'Photo.html'" ><span>生活照</span></button>
     </ul>
   </nav>
   
   <article>
     <h1>使用方法</h1>
-    <p>點選左邊的東西可以更加了解我</p>
-    
+   <a> <i class="fas fa-chevron-circle-left"></i>
+    <span>點選左邊的按鍵可以更加了解我哦！</span>
+    </a>
   </article>
 </section>
 
 <footer>
-  <p>謝謝！</p>
+  <p>Copyright © 2019</p>
 </footer>
 
 </body>

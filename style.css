@@ -5,12 +5,13 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffc7c7;
 }
 
 /* Style the header */
 header {
-  background-color: powderblue;
-  padding: 30px;
+  background-color: #ffc7c7;
+  padding: 5px;
   text-align: center;
   font-size: 35px;
   color: white;
@@ -20,23 +21,25 @@ header {
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
-  width: 30%;
+  width: 25%;
   height: 500px; /* only for demonstration, should be removed */
-  background: lightcyan;
+  background: #ffe2e2;
   padding: 20px;
 }
 
 /* Style the list inside the menu */
 nav ul {
   list-style-type: none;
+  text-decoration: none;
   padding: 0;
+  font-size: 30px;
 }
 
 article {
   float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
+  padding: 50px;
+  width: 75%;
+  background-color:  #f6f6f6;
   height: 500px; /* only for demonstration, should be removed */
 }
 
@@ -49,9 +52,9 @@ section:after {
 
 /* Style the footer */
 footer {
-  background-color: paleturquoise;
+  background-color: #8785a2;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   color: white;
   width: 100%;
 }
@@ -63,8 +66,76 @@ footer {
     height: auto;
   }
 }
-li a{
-      text-decoration: none;
-      color: #00f;
-      
+
 }
+h1 {
+  font-size: 30px;
+}
+
+/*這個是Photo.html的圖片顯示效果*/
+div.polaroid {
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+
+/*左方的BUTTON功能*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#ea9085;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+a.icon-block {
+        display:inline-block;
+        width:10em;        
+        text-align:center;
+    }
+
+    a.icon-block i,
+    a.icon-block span {
+        display:inline;
+        width:100%;
+        clear:both;
+    }
