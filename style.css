@@ -2,6 +2,10 @@
   box-sizing: border-box;
   font-family:'微軟正黑體';
 }
+a{
+  text-decoration: none;
+  color: #000;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +26,7 @@ header {
 nav {
   float: left;
   width: 25%;
-  height: 500px; /* only for demonstration, should be removed */
+  height: 900px; /* only for demonstration, should be removed */
   background: #ffe2e2;
   padding: 20px;
 }
@@ -33,6 +37,10 @@ nav ul {
   text-decoration: none;
   padding: 0;
   font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
 }
 
 article {
@@ -40,7 +48,7 @@ article {
   padding: 50px;
   width: 75%;
   background-color:  #f6f6f6;
-  height: 500px; /* only for demonstration, should be removed */
+  height: 900px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -60,23 +68,41 @@ footer {
 }
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
+/*@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 37.99999%;
+    height: auto;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
     width: 100%;
     height: auto;
   }
 }
 
-}
+
+}*/
+
+
 h1 {
   font-size: 30px;
 }
 
 /*這個是Photo.html的圖片顯示效果*/
-div.polaroid {
-  width: 400px;
+div.polaroid{
+  width: 300px;
+  height: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  display: inline-block;
+  margin: 0 100px;
+}
+
+div.polaroid:hover {
+  border: 1px solid #777;
 }
 
 
@@ -89,18 +115,20 @@ div.polaroid {
   color: white;
   text-align: center;
   font-size: 28px;
-  padding: 20px;
-  width: 200px;
+  padding: 20px 10px;
+  width:50%;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-}
+
+  }
 
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  
 }
 
 .button span:after {
@@ -126,7 +154,7 @@ div.polaroid {
   cursor: not-allowed;
 }
 
-
+/* ICON*/
 a.icon-block {
         display:inline-block;
         width:10em;        
@@ -139,3 +167,12 @@ a.icon-block {
         width:100%;
         clear:both;
     }
+@media (max-width: 800px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  div.polaroid{
+  margin: auto;
+}
+}
